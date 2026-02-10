@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Digital Bloom Media</title>
-  <meta name="description" content="Digital Bloom Media – Creative digital solutions for brands, events, and growing businesses." />
+  <meta name="description" content="Digital Bloom Media – Automation & Systems for Small Businesses." />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -15,8 +15,8 @@
       line-height: 1.6;
     }
     header {
-      background: #BEBEBE; /* grey header */
-      color: #2E2E2E;      /* dark grey text */
+      background: #e4e2dd; /* matches logo background */
+      color: #2E2E2E;
       padding: 4rem 1.5rem;
       text-align: center;
     }
@@ -36,12 +36,17 @@
     }
     .btn {
       display: inline-block;
-      background: #8C8C8C; /* grey button */
+      background: #b0aea9; /* medium grey button */
       color: #fff;
       padding: 0.75rem 1.5rem;
       border-radius: 999px;
       font-weight: 600;
       text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn:hover {
+      background: #98968f; /* darker on hover */
+      transform: scale(1.05);
     }
     section {
       padding: 4rem 1.5rem;
@@ -65,7 +70,7 @@
       gap: 2rem;
     }
     .card {
-      background: #E0E0E0; /* card grey */
+      background: #f3f2f0; /* lighter card grey */
       padding: 2rem;
       border-radius: 1.25rem;
       box-shadow: 0 10px 25px rgba(0,0,0,0.05);
@@ -78,10 +83,11 @@
       color: #2E2E2E;
     }
     .cta {
-      background: #D6D6D6; /* grey CTA section */
+      background: #e9e8e5; /* soft CTA section */
       text-align: center;
       border-radius: 1.5rem;
       padding: 3rem 2rem;
+      margin-top: 2rem;
     }
     .cta h2 {
       margin-bottom: 1rem;
@@ -92,6 +98,29 @@
       color: #555555;
       font-size: 0.9rem;
     }
+    iframe {
+      border-radius: 1rem;
+      max-width: 100%;
+    }
+    /* WhatsApp button animation */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: #b0aea9;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s, background 0.3s;
+    }
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+      background: #98968f;
+    }
   </style>
 </head>
 <body>
@@ -99,28 +128,28 @@
   <header>
     <img src="logo.png" alt="Digital Bloom Media Logo">
     <h1>Digital Bloom Media</h1>
-    <p>Helping brands, events, and entrepreneurs grow beautifully through social media management, smart digital design and strategy</p>
+    <p>Helping brands, events, and entrepreneurs grow beautifully through sociala media management, smart digital design and strategy.</p>
     <a href="#contact" class="btn">Let’s Work Together</a>
   </header>
 
   <section>
     <div class="section-title">
       <h2>What We Do</h2>
-      <p>Creative digital services designed to help your business bloom.</p>
+      <p>Services designed to help your business bloom.</p>
     </div>
 
     <div class="grid">
       <div class="card">
         <h3>Websites & Landing Pages</h3>
-        <p>Clean, modern websites for events, small businesses, and personal brands</p>
+        <p>Clean, modern websites for events, small businesses, and personal brands — built to convert.</p>
       </div>
       <div class="card">
         <h3>Branding & Design</h3>
         <p>Logos, visuals, and brand identity that tell your story and stand out online.</p>
       </div>
       <div class="card">
-        <h3>Digital Marketing</h3>
-        <p>Social media smanagement, content ideas, and growth-focused digital strategies.</p>
+        <h3>Social Media Management</h3>
+        <p>We manage your social media accounts, create posts, and grow your audience consistently.</p>
       </div>
       <div class="card">
         <h3>Event Digital Solutions</h3>
@@ -129,25 +158,65 @@
     </div>
   </section>
 
+  <section>
+    <div class="section-title">
+      <h2>Portfolio (Mockups)</h2>
+      <p>Some mock designs to showcase our capabilities.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <img src="mockup1.png" alt="Event Landing Page" style="width:100%; border-radius:10px;">
+        <h3>Event Landing Page</h3>
+        <p>Sample landing page design for events.</p>
+      </div>
+      <div class="card">
+        <img src="mockup2.png" alt="Branding Mockup" style="width:100%; border-radius:10px;">
+        <h3>Branding Mockup</h3>
+        <p>Logo and color palette example for a business.</p>
+      </div>
+      <div class="card">
+        <img src="mockup3.png" alt="Social Media Post" style="width:100%; border-radius:10px;">
+        <h3>Social Media Design</h3>
+        <p>Instagram post design mockup.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <h2>Testimonials</h2>
+      <p>What people say about our work (sample quotes)</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <p>“Digital Bloom Media helped us visualize our business ideas with clean mockups — highly recommended!”</p>
+        <h3>– Sample Client</h3>
+      </div>
+      <div class="card">
+        <p>“The social media management mockups gave us a clear idea of what’s possible for our brand.”</p>
+        <h3>– Sample Client</h3>
+      </div>
+    </div>
+  </section>
+
   <section class="cta" id="contact">
-    <h2>Ready to Grow Your Brand?</h2>
-    <p>Let’s create something meaningful and profitable together.</p>
-    <p><strong>Contact:</strong> 069 183 6505</p>
-    <p>digitalbloommediasa@gmail.com</p>
+    <h2>Ready to Grow Your Business?</h2>
+    <p>Fill out the form below and we’ll get back to you!</p>
+    <a href="https://forms.gle/LBYaBPVWNC6pxz4p7" target="_blank" class="btn">
+      Fill Out Contact Form
+    </a>
   </section>
 
   <!-- WhatsApp Contact Button -->
-  <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-    <a href="https://wa.me/27691836505" target="_blank" 
-       style="background:#8C8C8C; color:white; padding:15px 20px; border-radius:50px; 
-              font-weight:600; text-decoration:none; box-shadow:0 5px 15px rgba(0,0,0,0.2);">
-      Chat with us on WhatsApp
-    </a>
-  </div>
+  <a href="https://wa.me/27691836505" target="_blank" class="whatsapp-btn">
+    Chat with us on WhatsApp
+  </a>
 
   <footer>
     <p>© 2026 Digital Bloom Media. All rights reserved.</p>
   </footer>
 
 </body>
+</html>
+
 </html>
